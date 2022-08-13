@@ -12,8 +12,7 @@ public class leaf implements component {
     public void remove(component c){
         System.out.println("leaf remove");
     }
-    public component getChild(int i)
-    {
+    public component getChild(int i) {
         System.out.println("leaf getChild");
         return null;
     }
