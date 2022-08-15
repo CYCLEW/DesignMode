@@ -6,7 +6,7 @@ import 结构型模式.组合模式.安全式.component.leaf;
 
 public class Main {
     public static void main(String[] args) {
-        composite c0=new composite();
+        composite c0=new composite();   //安全式树枝需要说明具体类
         composite c1=new composite();
         component leaf1=new leaf("1");
         component leaf2=new leaf("2");

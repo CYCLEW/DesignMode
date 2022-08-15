@@ -9,8 +9,8 @@ import 结构型模式.桥接模式.shape.shape;
 
 public class Main {
     public static void main(String[] args) {
-        shape shape1 = new circle();
-        shape1.setColor(new red());
+        shape shape1 = new circle();    //主题类
+        shape1.setColor(new red());     //red桥接类
         shape1.draw();
 
         shape shape2 = new rectangle();

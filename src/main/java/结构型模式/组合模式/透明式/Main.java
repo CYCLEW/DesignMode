@@ -6,7 +6,7 @@ import 结构型模式.组合模式.透明式.component.leaf;
 
 public class Main {
     public static void main(String[] args) {
-        component c0=new composite();
+        component c0=new composite();   //透明式仅需声明接口即可
         component c1=new composite();
         component leaf1=new leaf("1");
         component leaf2=new leaf("2");

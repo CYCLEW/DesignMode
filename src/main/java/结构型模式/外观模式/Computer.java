@@ -2,13 +2,13 @@ package 结构型模式.外观模式;
 
 import 结构型模式.外观模式.modular.*;
 
-public class Computer implements computer {
-    private final CPU cpu;
+public class Computer implements computer { //外观类
+    private final CPU cpu;      //子组件
     private final GPU gpu;
     private final IO io;
     private final RAM ram;
 
-    public Computer(){
+    public Computer(){      //封装子组件逻辑
         cpu = new CPU();
         gpu = new GPU();
         io = new IO();
