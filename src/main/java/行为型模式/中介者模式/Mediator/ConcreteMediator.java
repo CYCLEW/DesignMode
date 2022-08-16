@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConcreteMediator implements mediator{
-    private List<object> list=new ArrayList<>();
+    private List<object> list=new ArrayList<>();    //list 管理通信类
     @Override
     public void register(object o) {
         if (!list.contains(o)){

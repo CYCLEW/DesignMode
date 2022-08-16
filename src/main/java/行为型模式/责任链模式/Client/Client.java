@@ -6,6 +6,6 @@ public class Client {
     public Client() {
     }
     public PurchaseRequest sendRequest(int ID){
-        return new PurchaseRequest(ID);
+        return new PurchaseRequest(ID);         //返回一个责任链处理对象类
     }
 }

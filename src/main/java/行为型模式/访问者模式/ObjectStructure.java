@@ -6,12 +6,12 @@ import 行为型模式.访问者模式.visitor.visitor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ObjectStructure {
-    private List<element> list = new ArrayList<>();
+public class ObjectStructure {      //中间操作元素类
+    private List<element> list = new ArrayList<>(); //管理所有元素
 
     public void accept(visitor visitor) {
         for (element element : list) {
-            element.Accept(visitor);
+            element.Accept(visitor);    //访问者处理
         }
     }
 

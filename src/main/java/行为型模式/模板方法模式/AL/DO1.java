@@ -1,4 +1,4 @@
-package 行为型模式.模板模式.AL;
+package 行为型模式.模板方法模式.AL;
 
 public class DO1 extends Template {
     @Override

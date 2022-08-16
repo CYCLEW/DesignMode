@@ -8,7 +8,7 @@ import 行为型模式.状态模式.state.state;
 
 public class Player {
 
-    public state placeA;
+    public state placeA;        //对象的几个状态
     public state placeB;
     public state onMove;
     private state state;
@@ -23,7 +23,7 @@ public class Player {
 
     public void move(){
         state.move();
-    }
+    }   //对外暴露的方法
 
     public void stop(){
         state.stop();

@@ -8,16 +8,16 @@ import 行为型模式.责任链模式.Decision.Object.MasterApprove;
 
 public class Main {
     public static void main(String[] args) {
-        Client c=new Client();
+        Client c=new Client();  //客户都安
 
-        Approve m=new MasterApprove("master");
+        Approve m=new MasterApprove("master");      //实例化责任链对象
         Approve d=new DepartmentApprove("depart");
         Approve g=new GroupApprove("group");
 
-        m.setSuccessor(d);
+        m.setSuccessor(d);  //创建责任链 m->d->g
         d.setSuccessor(g);
 
-        m.ProcessRequest(c.sendRequest(0));
+        m.ProcessRequest(c.sendRequest(0)); //发送请求
         m.ProcessRequest(c.sendRequest(1));
         m.ProcessRequest(c.sendRequest(2));
         m.ProcessRequest(c.sendRequest(3));

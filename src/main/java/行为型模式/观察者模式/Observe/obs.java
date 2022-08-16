@@ -10,11 +10,11 @@ public class obs implements Observe{
     @Override
     public void Register(subject s) {
         L.add(s);
-    }
+    }   //注册观察者
 
     @Override
     public void Notify() {
-        for (subject s:L){
+        for (subject s:L){  //循环调用注册的观察者处理方法
             s.update();
         }
     }
